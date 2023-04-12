@@ -1,0 +1,33 @@
+ADD: pops the top two values from the stack, adds them, and pushes the result back onto the stack.
+
+SUB: pops the top two values from the stack, subtracts the second from the first, and pushes the result back onto the stack.
+
+MUL: pops the top two values from the stack, multiplies them, and pushes the result back onto the stack.
+
+DIV: pops the top two values from the stack, divides the first by the second, and pushes the result back onto the stack.
+
+MOD: pops the top two values from the stack, calculates the first modulo the second, and pushes the result back onto the stack.
+
+EQ: pops the top two values from the stack, checks if they are equal, and pushes the result (1 or 0) back onto the stack.
+
+AND: pops the top two values from the stack, performs a bitwise AND operation, and pushes the result back onto the stack.
+
+OR: pops the top two values from the stack, performs a bitwise OR operation, and pushes the result back onto the stack.
+
+XOR: pops the top two values from the stack, performs a bitwise XOR operation, and pushes the result back onto the stack.
+
+NOT: pops the top value from the stack, performs a bitwise NOT operation, and pushes the result back onto the stack.
+
+SHA3: pops two values from the stack (the start and length of a section of memory), computes the SHA3-256 hash of the corresponding section of memory, and pushes the result onto the stack.
+
+SLOAD: pops a value from the stack (the key to a storage slot), loads the corresponding value from storage, and pushes it onto the stack.
+
+SSTORE: pops two values from the stack (the key and value for a storage slot), and stores the value in the corresponding slot in storage.
+
+CALLVALUE: pushes the value (in wei) sent with the current message onto the stack.
+
+CALLER: pushes the address of the account that sent the current message onto the stack.
+
+BALANCE: pops an address from the stack, retrieves the balance of the corresponding account, and pushes it onto the stack.
+
+GASPRICE: pushes the current gas price onto the stack.
