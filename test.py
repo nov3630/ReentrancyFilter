@@ -1,9 +1,13 @@
 from z3 import *
+import six
 
 if __name__ == '__main__':
-    path_condition = [Id_1 <= Iv, init_Is >= Iv, 0 <= Id_1, Not(If(ULE(4, Id_size), 0, 1) != 0), Not(If(Extract(255, 224, Id_1) == 8527331, 1, 0) != 0), If(Extract(255, 224, Id_1) == 1805620970, 1, 0) != 0, If(Iv == 0, 1, 0) != 0]
-    solver = Solver()
-    solver.add(path_condition)
-    res = solver.check()
-    print(type(res))
-    print(res == sat)
+    # path_condition = []
+    # solver = Solver()
+    # solver.add(path_condition)
+    # res = solver.check()
+    # print(type(res))
+    # print(res == sat)
+    x = isinstance(BitVec('0x01', 256), str)
+    x = hex(int('0x05', 16) - int('0x02', 16))
+    print(int(x, 16) == int('0x03', 16), type(x))

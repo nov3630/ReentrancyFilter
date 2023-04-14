@@ -1,0 +1,207 @@
+================
+start address: 0
+end address: 12
+end statement type: conditional
+PUSH1 0x60
+PUSH1 0x40
+MSTORE
+PUSH1 0x04
+CALLDATASIZE
+LT
+PUSH2 0x004b
+JUMPI
+================
+start address: 13
+end address: 63
+end statement type: conditional
+PUSH1 0x00
+CALLDATALOAD
+PUSH29 0x0100000000000000000000000000000000000000000000000000000000
+SWAP1
+DIV
+PUSH4 0xffffffff
+AND
+DUP1
+PUSH3 0x821de3
+EQ
+PUSH2 0x0050
+JUMPI
+================
+start address: 64
+end address: 74
+end statement type: conditional
+DUP1
+PUSH4 0x6b9f96ea
+EQ
+PUSH2 0x00a5
+JUMPI
+================
+start address: 75
+end address: 79
+end statement type: terminal
+JUMPDEST
+PUSH1 0x00
+DUP1
+REVERT
+================
+start address: 80
+end address: 86
+end statement type: conditional
+JUMPDEST
+CALLVALUE
+ISZERO
+PUSH2 0x005b
+JUMPI
+================
+start address: 87
+end address: 90
+end statement type: terminal
+PUSH1 0x00
+DUP1
+REVERT
+================
+start address: 91
+end address: 98
+end statement type: unconditional
+JUMPDEST
+PUSH2 0x0063
+PUSH2 0x00ba
+JUMP
+================
+start address: 99
+end address: 164
+end statement type: terminal
+JUMPDEST
+PUSH1 0x40
+MLOAD
+DUP1
+DUP3
+PUSH20 0xffffffffffffffffffffffffffffffffffffffff
+AND
+PUSH20 0xffffffffffffffffffffffffffffffffffffffff
+AND
+DUP2
+MSTORE
+PUSH1 0x20
+ADD
+SWAP2
+POP
+POP
+PUSH1 0x40
+MLOAD
+DUP1
+SWAP2
+SUB
+SWAP1
+RETURN
+================
+start address: 165
+end address: 171
+end statement type: conditional
+JUMPDEST
+CALLVALUE
+ISZERO
+PUSH2 0x00b0
+JUMPI
+================
+start address: 172
+end address: 175
+end statement type: terminal
+PUSH1 0x00
+DUP1
+REVERT
+================
+start address: 176
+end address: 183
+end statement type: unconditional
+JUMPDEST
+PUSH2 0x00b8
+PUSH2 0x00df
+JUMP
+================
+start address: 184
+end address: 185
+end statement type: terminal
+JUMPDEST
+STOP
+================
+start address: 186
+end address: 222
+end statement type: unconditional
+JUMPDEST
+PUSH1 0x00
+DUP1
+SWAP1
+SLOAD
+SWAP1
+PUSH2 0x0100
+EXP
+SWAP1
+DIV
+PUSH20 0xffffffffffffffffffffffffffffffffffffffff
+AND
+DUP2
+JUMP
+================
+start address: 223
+end address: 333
+end statement type: conditional
+JUMPDEST
+PUSH1 0x00
+DUP1
+SWAP1
+SLOAD
+SWAP1
+PUSH2 0x0100
+EXP
+SWAP1
+DIV
+PUSH20 0xffffffffffffffffffffffffffffffffffffffff
+AND
+PUSH20 0xffffffffffffffffffffffffffffffffffffffff
+AND
+ADDRESS
+PUSH20 0xffffffffffffffffffffffffffffffffffffffff
+AND
+BALANCE
+PUSH1 0x40
+MLOAD
+PUSH1 0x00
+PUSH1 0x40
+MLOAD
+DUP1
+DUP4
+SUB
+DUP2
+DUP6
+DUP8
+PUSH2 0x8796
+GAS
+SUB
+CALL
+SWAP3
+POP
+POP
+POP
+ISZERO
+ISZERO
+PUSH2 0x0152
+JUMPI
+================
+start address: 334
+end address: 337
+end statement type: terminal
+PUSH1 0x00
+DUP1
+REVERT
+================
+start address: 338
+end address: 339
+end statement type: unconditional
+JUMPDEST
+JUMP
+================
+start address: 340
+end address: 340
+end statement type: terminal
+STOP

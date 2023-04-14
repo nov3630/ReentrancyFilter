@@ -26,7 +26,7 @@ class CFGBuilder:
             lines = f.readlines()
             for line in lines:
                 address, instruction = line.strip().split(': ')
-                address = int(address, 16)
+                address = int(address)
                 self.instructions[address] = instruction
 
         # Find the start and end addresses

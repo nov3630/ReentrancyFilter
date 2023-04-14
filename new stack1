@@ -1,0 +1,276 @@
+0
+['PUSH1 0x60',
+ 'PUSH1 0x40',
+ 'MSTORE',
+ 'PUSH1 0x04',
+ 'CALLDATASIZE',
+ 'LT',
+ 'PUSH2 0x004b',
+ 'JUMPI']
+['0x60']
+['0x40', '0x60']
+[]
+['0x04']
+[data_1, '0x04']
+[If(ULT(data_1, 4), 1, 0)]
+['0x004b', If(ULT(data_1, 4), 1, 0)]
+75
+['JUMPDEST', 'PUSH1 0x00', 'DUP1', 'REVERT']
+[]
+['0x00']
+['0x00', '0x00']
+[]
+13
+['PUSH1 0x00',
+ 'CALLDATALOAD',
+ 'PUSH29 0x0100000000000000000000000000000000000000000000000000000000',
+ 'SWAP1',
+ 'DIV',
+ 'PUSH4 0xffffffff',
+ 'AND',
+ 'DUP1',
+ 'PUSH3 0x821de3',
+ 'EQ',
+ 'PUSH2 0x0050',
+ 'JUMPI']
+['0x00']
+[memory_data_1]
+['0x0100000000000000000000000000000000000000000000000000000000', memory_data_1]
+[memory_data_1, '0x0100000000000000000000000000000000000000000000000000000000']
+[Concat(0, Extract(255, 224, memory_data_1))]
+['0xffffffff', Concat(0, Extract(255, 224, memory_data_1))]
+[Concat(0, Extract(255, 224, memory_data_1))]
+[Concat(0, Extract(255, 224, memory_data_1)), Concat(0, Extract(255, 224, memory_data_1))]
+['0x821de3', Concat(0, Extract(255, 224, memory_data_1)), Concat(0, Extract(255, 224, memory_data_1))]
+[If(Extract(255, 224, memory_data_1) == 8527331, 1, 0), Concat(0, Extract(255, 224, memory_data_1))]
+['0x0050', If(Extract(255, 224, memory_data_1) == 8527331, 1, 0), Concat(0, Extract(255, 224, memory_data_1))]
+80
+['JUMPDEST', 'CALLVALUE', 'ISZERO', 'PUSH2 0x005b', 'JUMPI']
+[Concat(0, Extract(255, 224, memory_data_1))]
+[data_2, Concat(0, Extract(255, 224, memory_data_1))]
+[If(data_2 == 0, 1, 0), Concat(0, Extract(255, 224, memory_data_1))]
+['0x005b', If(data_2 == 0, 1, 0), Concat(0, Extract(255, 224, memory_data_1))]
+91
+['JUMPDEST', 'PUSH2 0x0063', 'PUSH2 0x00ba', 'JUMP']
+[Concat(0, Extract(255, 224, memory_data_1))]
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x00ba', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+186
+['JUMPDEST',
+ 'PUSH1 0x00',
+ 'DUP1',
+ 'SWAP1',
+ 'SLOAD',
+ 'SWAP1',
+ 'PUSH2 0x0100',
+ 'EXP',
+ 'SWAP1',
+ 'DIV',
+ 'PUSH20 0xffffffffffffffffffffffffffffffffffffffff',
+ 'AND',
+ 'DUP2',
+ 'JUMP']
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x00', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x00', '0x00', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x00', '0x00', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[storage_data_1, '0x00', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x00', storage_data_1, '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x0100', '0x00', storage_data_1, '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x1', storage_data_1, '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[storage_data_1, '0x1', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[storage_data_1, '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0xffffffffffffffffffffffffffffffffffffffff', storage_data_1, '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[Concat(0, Extract(159, 0, storage_data_1)), '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x0063', Concat(0, Extract(159, 0, storage_data_1)), '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+99
+['JUMPDEST',
+ 'PUSH1 0x40',
+ 'MLOAD',
+ 'DUP1',
+ 'DUP3',
+ 'PUSH20 0xffffffffffffffffffffffffffffffffffffffff',
+ 'AND',
+ 'PUSH20 0xffffffffffffffffffffffffffffffffffffffff',
+ 'AND',
+ 'DUP2',
+ 'MSTORE',
+ 'PUSH1 0x20',
+ 'ADD',
+ 'SWAP2',
+ 'POP',
+ 'POP',
+ 'PUSH1 0x40',
+ 'MLOAD',
+ 'DUP1',
+ 'SWAP2',
+ 'SUB',
+ 'SWAP1',
+ 'RETURN']
+[Concat(0, Extract(159, 0, storage_data_1)), '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x40', Concat(0, Extract(159, 0, storage_data_1)), '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[memory_data_2, Concat(0, Extract(159, 0, storage_data_1)), '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[memory_data_2, memory_data_2, Concat(0, Extract(159, 0, storage_data_1)), '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[Concat(0, Extract(159, 0, storage_data_1)), memory_data_2, memory_data_2, Concat(0, Extract(159, 0, storage_data_1)), '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0xffffffffffffffffffffffffffffffffffffffff', Concat(0, Extract(159, 0, storage_data_1)), memory_data_2, memory_data_2, Concat(0, Extract(159, 0, storage_data_1)), '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[Concat(0, Extract(159, 0, storage_data_1)), memory_data_2, memory_data_2, Concat(0, Extract(159, 0, storage_data_1)), '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0xffffffffffffffffffffffffffffffffffffffff', Concat(0, Extract(159, 0, storage_data_1)), memory_data_2, memory_data_2, Concat(0, Extract(159, 0, storage_data_1)), '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[Concat(0, Extract(159, 0, storage_data_1)), memory_data_2, memory_data_2, Concat(0, Extract(159, 0, storage_data_1)), '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[memory_data_2, Concat(0, Extract(159, 0, storage_data_1)), memory_data_2, memory_data_2, Concat(0, Extract(159, 0, storage_data_1)), '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[memory_data_2, memory_data_2, Concat(0, Extract(159, 0, storage_data_1)), '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x20', memory_data_2, memory_data_2, Concat(0, Extract(159, 0, storage_data_1)), '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[32 + memory_data_2, memory_data_2, Concat(0, Extract(159, 0, storage_data_1)), '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[Concat(0, Extract(159, 0, storage_data_1)), memory_data_2, 32 + memory_data_2, '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[memory_data_2, 32 + memory_data_2, '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[32 + memory_data_2, '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x40', 32 + memory_data_2, '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[memory_data_3, 32 + memory_data_2, '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[memory_data_3, memory_data_3, 32 + memory_data_2, '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[32 + memory_data_2, memory_data_3, memory_data_3, '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[32 +
+memory_data_2 +
+115792089237316195423570985008687907853269984665640564039457584007913129639935*
+memory_data_3, memory_data_3, '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[memory_data_3, 32 +
+memory_data_2 +
+115792089237316195423570985008687907853269984665640564039457584007913129639935*
+memory_data_3, '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+87
+['PUSH1 0x00', 'DUP1', 'REVERT']
+['0x00', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x00', '0x00', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+64
+['DUP1', 'PUSH4 0x6b9f96ea', 'EQ', 'PUSH2 0x00a5', 'JUMPI']
+['0x0063', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x6b9f96ea', '0x0063', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x00', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x00a5', '0x00', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+165
+['JUMPDEST', 'CALLVALUE', 'ISZERO', 'PUSH2 0x00b0', 'JUMPI']
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[data_3, '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[If(data_3 == 0, 1, 0), '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x00b0', If(data_3 == 0, 1, 0), '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+176
+['JUMPDEST', 'PUSH2 0x00b8', 'PUSH2 0x00df', 'JUMP']
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x00df', '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+223
+['JUMPDEST',
+ 'PUSH1 0x00',
+ 'DUP1',
+ 'SWAP1',
+ 'SLOAD',
+ 'SWAP1',
+ 'PUSH2 0x0100',
+ 'EXP',
+ 'SWAP1',
+ 'DIV',
+ 'PUSH20 0xffffffffffffffffffffffffffffffffffffffff',
+ 'AND',
+ 'PUSH20 0xffffffffffffffffffffffffffffffffffffffff',
+ 'AND',
+ 'ADDRESS',
+ 'PUSH20 0xffffffffffffffffffffffffffffffffffffffff',
+ 'AND',
+ 'BALANCE',
+ 'PUSH1 0x40',
+ 'MLOAD',
+ 'PUSH1 0x00',
+ 'PUSH1 0x40',
+ 'MLOAD',
+ 'DUP1',
+ 'DUP4',
+ 'SUB',
+ 'DUP2',
+ 'DUP6',
+ 'DUP8',
+ 'PUSH2 0x8796',
+ 'GAS',
+ 'SUB',
+ 'CALL',
+ 'SWAP3',
+ 'POP',
+ 'POP',
+ 'POP',
+ 'ISZERO',
+ 'ISZERO',
+ 'PUSH2 0x0152',
+ 'JUMPI']
+['0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x00', '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x00', '0x00', '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x00', '0x00', '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[storage_data_1, '0x00', '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x00', storage_data_1, '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x0100', '0x00', storage_data_1, '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x1', storage_data_1, '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[storage_data_1, '0x1', '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[storage_data_1, '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0xffffffffffffffffffffffffffffffffffffffff', storage_data_1, '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0xffffffffffffffffffffffffffffffffffffffff', Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[address_1, Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0xffffffffffffffffffffffffffffffffffffffff', address_1, Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[Concat(0, Extract(159, 0, address_1)), Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[0, Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x40', 0, Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[memory_data_4, 0, Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x00', memory_data_4, 0, Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x40', '0x00', memory_data_4, 0, Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[memory_data_5, '0x00', memory_data_4, 0, Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[memory_data_5, memory_data_5, '0x00', memory_data_4, 0, Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[memory_data_4, '0x00', memory_data_5, memory_data_5, memory_data_4, 0, Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[memory_data_4, memory_data_5, memory_data_5, memory_data_4, 0, Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[memory_data_5, memory_data_4, memory_data_5, memory_data_5, memory_data_4, 0, Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[0, memory_data_4, memory_data_5, memory_data_5, memory_data_4, memory_data_5, 0, Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[Concat(0, Extract(159, 0, storage_data_1)), 0, memory_data_5, memory_data_4, memory_data_5, memory_data_5, memory_data_4, 0, Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x8796', Concat(0, Extract(159, 0, storage_data_1)), 0, memory_data_5, memory_data_4, memory_data_5, memory_data_5, memory_data_4, 0, Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[gas_data_1, '0x8796', Concat(0, Extract(159, 0, storage_data_1)), 0, memory_data_5, memory_data_4, memory_data_5, memory_data_5, memory_data_4, 0, Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[115792089237316195423570985008687907853269984665640564039457584007913129605226 +
+gas_data_1, Concat(0, Extract(159, 0, storage_data_1)), 0, memory_data_5, memory_data_4, memory_data_5, memory_data_5, memory_data_4, 0, Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x01', memory_data_4, 0, Concat(0, Extract(159, 0, storage_data_1)), '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[Concat(0, Extract(159, 0, storage_data_1)), memory_data_4, 0, '0x01', '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[memory_data_4, 0, '0x01', '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[0, '0x01', '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x01', '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[0, '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+[1, '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x0152', 1, '0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+338
+['JUMPDEST', 'JUMP']
+['0x00b8', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+184
+['JUMPDEST', 'STOP']
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+334
+['PUSH1 0x00', 'DUP1', 'REVERT']
+['0x00', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x00', '0x00', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+172
+['PUSH1 0x00', 'DUP1', 'REVERT']
+['0x00', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x00', '0x00', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+75
+['JUMPDEST', 'PUSH1 0x00', 'DUP1', 'REVERT']
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x00', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x00', '0x00', '0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
+['0x0063', Concat(0, Extract(255, 224, memory_data_1))]
